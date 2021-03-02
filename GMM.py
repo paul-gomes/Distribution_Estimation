@@ -7,17 +7,13 @@ class GMM(object):
         X = np.asarray(X)
         self.m, self.n = X.shape
         self.data = X.copy()
-        print (np.mean(X))
-        
-        #number of cluters
+        print (np.mean(X))        
         self.k = k
         
     def _init(self):
-        # init mixture means/sigmas
         self.mean_arr = np.asmatrix(np.random.random((self.k, self.n)) + np.mean(self.data))
         self.sigma_arr = np.array([np.asmatrix(np.identity(self.n)) for i in range(self.k)])
         self.phi = np.ones(self.k)/self.k
-        #Z Latent Variable giving probability of each point for each distribution
         self.Z = np.asmatrix(np.empty((self.m, self.k), dtype=float))
     
     def fit(self, tol=1e-4):
@@ -44,7 +40,6 @@ class GMM(object):
         return logl
 
     def e_step(self):
-        #Finding probability of each point belonging to each pdf and putting it in latent variable Z
         for i in range(self.m):
             den = 0
             for j in range(self.k):
@@ -56,11 +51,10 @@ class GMM(object):
 
                 self.Z[i, j] = num
             self.Z[i, :] /= den
-            assert self.Z[i, :].sum() - 1 < 1e-4  # Program stop if this condition is false
+            assert self.Z[i, :].sum() - 1 < 1e-4
             
     
     def m_step(self):
-        #Updating mean and variance
         for j in range(self.k):
             const = self.Z[:, j].sum()
             self.phi[j] = 1/self.m * const

@@ -9,7 +9,6 @@ def plot_1D(gmm,x,col):
   plt.hist(x,density=True)
   x = np.linspace(x.min(), x.max(), 100, endpoint=False)
   ys = np.zeros_like(x)
-
   i=0
   for w in gmm.phi:
       y=sp.multivariate_normal.pdf(x, mean=gmm.mean_arr[i], cov=gmm.sigma_arr[i])*w
@@ -51,9 +50,7 @@ def plot_2D(gmm,x,col,label):
 
 def For_Iris(features,No_Component=2):
     data = pd.read_csv("Data/Iris.data", header = 0)
-    data = data.reset_index()
-    
-    #For one feature
+    data = data.reset_index()       
     if (features==1):
         col='petal_width'
         x=data[[col]]
