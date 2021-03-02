@@ -14,7 +14,7 @@ I have created a class, GMM, that has e_step, m_step, loglikelihood, fit functio
 
 #### Density plots for IRIS dataset
 ![petal_length](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/petal_length.png)
-![petal_weight](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/petal_weight.png)
+![petal_weight](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/petal_width.png)
 ![sepal_length](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/sepal_length.png)
 ![sepal_width](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/sepal_width.png)
 #### GMM Estimation for Two Features
@@ -23,4 +23,14 @@ I have created a class, GMM, that has e_step, m_step, loglikelihood, fit functio
 ![](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/sepal_widthVSpetal_width.png)
 ![](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/sepal_widthVSsepal_length.png)
 
+#### Density plots for Balance Scale dataset
+![](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/left_distance.png)
+![](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/left_weight.png)
+![](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/right_distance.png)
+![](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/right_weight.png)
+#### GMM Estimation for Two Features
+![](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/left_distanceVSleft_weight.png)
+![](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/right_distanceVSleft_distance.png)
+![](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/right_distanceVSright_weight.png)
+![](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/right_weightVSleft_weight.png)
 
