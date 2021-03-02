@@ -10,7 +10,7 @@ I have used Gaussian Mixture Model and Expectation-Maximization on two different
 1. IRIS dataset
 2. Balance Scale dateset
 
-I have created a class, GMM, that has e_step, m_step, loglikelihood, fit functions. In the main class, I have read the data and using GMM class I creted kernel density plots for each features as well as GMM estimation for multiple features.
+I have created a class, GMM, that has e_step, m_step, loglikelihood, fit functions. In the main class, I have read the data and using GMM class I created kernel density plots for each features as well as GMM estimation for multiple features.
 
 #### Density plots for IRIS dataset
 ![petal_length](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/petal_length.png)
@@ -34,3 +34,10 @@ I have created a class, GMM, that has e_step, m_step, loglikelihood, fit functio
 ![](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/right_distanceVSright_weight.png)
 ![](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/right_weightVSleft_weight.png)
 
+
+### References
+1. https://www.python-course.eu/expectation_maximization_and_gaussian_mixture_models.php
+1. https://www.analyticsvidhya.com/blog/2019/10/gaussian-mixture-models-clustering/
+1. http://rstudio-pubs-static.s3.amazonaws.com/324830_8985f6dac8d34633b6cf23a92ff3e64c.html
+1. https://github.com/sohaib730/Gaussian-Mixture-Model
+2. https://www.kaggle.com/alexisbcook/distributions
