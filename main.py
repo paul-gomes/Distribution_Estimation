@@ -65,7 +65,7 @@ def For_Iris(features,No_Component=2):
         replace_map = {'class': {'Iris-virginica': 1, 'Iris-versicolor': 2,'Iris-setosa':3}}
         data.replace(replace_map, inplace=True)
         label=data[['class']]
-        col=['sepal_length','sepal_width']
+        col=['petal_width','sepal_width']
         x=data[col]
         x=np.array(x)
         gmm = GMM(x,No_Component)
@@ -75,7 +75,7 @@ def For_Iris(features,No_Component=2):
 def For_BalanceScale(features):
     data = pd.read_csv("Data/balance-scale.data", header = 0)
     if(features==1):
-        col='left_weight'
+        col='right_weight'
         x=data[[col]]
         x=np.array(x)
         gmm = GMM(x,2)
@@ -85,7 +85,7 @@ def For_BalanceScale(features):
         replace_map = {'class' : {'L':1, 'B':2, 'R':3}}
         data.replace(replace_map, inplace=True)
         label=data[['class']]
-        col=['left_weight','left_distance']
+        col=['left_distance','right_distance']
         x=data[col]
         x=np.array(x)
         gmm = GMM(x,2)
@@ -93,7 +93,7 @@ def For_BalanceScale(features):
         plot_2D(gmm,x,col,label) 
         
 def main():
-  #For_Iris(1,2)
+  #For_Iris(2,2)
   For_BalanceScale(2)
   
 if __name__== "__main__":
