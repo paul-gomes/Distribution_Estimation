@@ -36,7 +36,7 @@ I have created a class, GMM, that has e_step, m_step, loglikelihood, fit functio
 
 
 ### References
-1. https://www.python-course.eu/expectation_maximization_and_gaussian_mixture_models.php
+1. [expectation_maximization_and_gaussian_mixture_models](https://www.python-course.eu/expectation_maximization_and_gaussian_mixture_models.php)
 1. https://www.analyticsvidhya.com/blog/2019/10/gaussian-mixture-models-clustering/
 1. http://rstudio-pubs-static.s3.amazonaws.com/324830_8985f6dac8d34633b6cf23a92ff3e64c.html
 1. https://github.com/sohaib730/Gaussian-Mixture-Model
