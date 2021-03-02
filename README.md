@@ -10,7 +10,7 @@ I have used Gaussian Mixture Model and Expectation-Maximization on two different
 1. IRIS dataset
 2. Balance Scale dateset
 
-I have created a class, GMM, that has e_step, m_step, loglikelihood, fit functions. In the main class, I have read the data and using GMM class I creted kernel density plots for each features as well as GMM estimation.
+I have created a class, GMM, that has e_step, m_step, loglikelihood, fit functions. In the main class, I have read the data and using GMM class I creted kernel density plots for each features as well as GMM estimation for multiple features.
 
 #### Density plots for IRIS dataset
 ![petal_length](https://github.com/paul-gomes/Distribution_Estimation/blob/main/Image/petal_length.png)
